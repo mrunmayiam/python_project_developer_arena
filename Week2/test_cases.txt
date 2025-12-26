@@ -1,0 +1,114 @@
+# Test cases for grading system
+
+# Format: Name, Marks
+# Expected Output: Grade
+
+# --- Normal cases ---
+Alice, 95
+# Expected Output: A
+
+Bob, 90
+# Expected Output: A
+
+Charlie, 89
+# Expected Output: B
+
+David, 85
+# Expected Output: B
+
+Eve, 80
+# Expected Output: B
+
+Frank, 79
+# Expected Output: C
+
+Grace, 75
+# Expected Output: C
+
+Heidi, 70
+# Expected Output: C
+
+Ivan, 69
+# Expected Output: D
+
+Judy, 65
+# Expected Output: D
+
+Ken, 60
+# Expected Output: D
+
+Leo, 59
+# Expected Output: F
+
+Mia, 50
+# Expected Output: F
+
+Noah, 0
+# Expected Output: F
+
+# --- Edge cases ---
+Olivia, 100
+# Expected Output: A
+
+Pam, 90
+# Expected Output: A
+
+Quinn, 89
+# Expected Output: B
+
+Ruth, 80
+# Expected Output: B
+
+Sam, 79
+# Expected Output: C
+
+Tina, 70
+# Expected Output: C
+
+Uma, 69
+# Expected Output: D
+
+Victor, 60
+# Expected Output: D
+
+Wendy, 59
+# Expected Output: F
+
+# --- Invalid marks ---
+Xander, -10
+# Expected Output: Invalid marks
+
+Yara, 101
+# Expected Output: Invalid marks
+
+Zack, 200
+# Expected Output: Invalid marks
+
+# --- Name edge cases ---
+, 85
+# Expected Output: Invalid name
+
+VeryLongStudentNameExceedingUsualLimitsByALot, 75
+# Expected Output: C
+
+Special@Name!#, 88
+# Expected Output: B
+
+NameWithSpace , 92
+# Expected Output: A
+
+Name-With-Dash, 78
+# Expected Output: C
+
+NameWith123Numbers, 83
+# Expected Output: B
+
+# --- Combination edge cases ---
+, -5
+# Expected Output: Invalid name and marks
+
+12345, 105
+# Expected Output: Invalid name and marks
+
+!@#$%, 60
+# Expected Output: Invalid name
